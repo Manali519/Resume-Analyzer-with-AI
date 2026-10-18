@@ -1,0 +1,8 @@
+# Install torch first so the CPU build is used.
+fastapi>=0.142,<1
+uvicorn>=0.54,<1
+numpy>=2.5,<3
+transformers>=5.19,<6
+sentence-transformers>=6.1,<7
+# Only for building the similar-jobs profiles (python -m training.preprocess / training.train)
+pandas>=2.3

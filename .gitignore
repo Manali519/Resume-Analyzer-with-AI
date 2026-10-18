@@ -1,0 +1,44 @@
+# Secrets (commit only the *.env.example templates)
+.env
+.env.*
+!.env.example
+
+# Dependencies and builds
+node_modules/
+dist/
+dist-ssr/
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Datasets (download separately; see ML/app/config.py JOB_DATASET)
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+ML/data/
+
+# Trained ML artifacts and model weights (rebuild with python -m training.preprocess / training.train)
+ML/artifacts/
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.onnx
+*.safetensors
+
+# Uploads, logs and editor files
+uploads/
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
